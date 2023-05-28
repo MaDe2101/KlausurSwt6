@@ -9,6 +9,30 @@ import java.lang.reflect.Method;
 
 public class Main {
     public static void main(String[] args) {
+        getAnnotations();
+
+        WorkerClass workerClass = new WorkerClass();
+        WorkerClass vanessasHackler = new WorkerClass(3, 7);
+        System.out.println(
+                "This is the result of the function: " +      workerClass.f(
+                        5,
+                        2
+                )
+
+        );
+
+        System.out.println(
+                "This is the result of the function: " +
+                        workerClass.f()
+        );
+
+        System.out.println(
+                "This is the result of the function: " +
+                        vanessasHackler.f()
+        );
+    }
+
+    private static void getAnnotations() {
         System.out.println("Annotation of class WorkerClass:");
         System.out.println("Author: " + WorkerClass.class.getAnnotation(SimpleDoc.class).author());
         System.out.println("Short Description: " + WorkerClass.class.getAnnotation(SimpleDoc.class).shortDescription());

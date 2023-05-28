@@ -18,12 +18,19 @@ public class WorkerClass {
     }
 
     public WorkerClass() {
-        this.number = 10;
-        this.secondNumber = 20;
+        this.number = 2;
+        this.secondNumber = 5;
     }
 
     public int getNumber() {
         return number;
     }
 
+    public int f(int x, int y){
+        return (x + y) * 2;
+    }
+
+    public int f(){
+        return (number + secondNumber) * 2;
+    }
 }
