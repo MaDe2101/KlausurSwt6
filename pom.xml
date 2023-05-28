@@ -4,6 +4,10 @@
   <groupId>org.example</groupId>
   <artifactId>Klausur</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <name>Archetype - Klausur</name>
   <url>http://maven.apache.org</url>
+  <modules>
+    <module>AnotationExample</module>
+  </modules>
 </project>
